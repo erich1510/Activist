@@ -7,11 +7,9 @@
 </ion-header>
 
 <ion-content padding>
-  <p>
-    Homepage
-  </p>
 
-  <button ion-button block outline>Sign up</button>
-  <button ion-button block outline (click) = "logEvent($event)" >Log in</button>
+  <p>Homepage</p>
+  <button ion-button block outline (click) = "gotoAct($event)">Activist</button>
+  <button ion-button block outline (click) = "gotoOrg($event)" >Organizations</button>
 
 </ion-content>

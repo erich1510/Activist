@@ -3,7 +3,8 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
-import { ProfilePage } from '../pages/profile/profile';
+import { ActivistPage } from'../pages/activist/activist';
+import { OrganizationsPage } from '../pages/organizations/organizations';
 
 
 @Component({

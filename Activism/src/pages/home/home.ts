@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 import { ProfilePage} from '../profile/profile';
+import {OrganizationsPage} from "../organizations/organizations";
+import {ActivistPage} from "../activist/activist";
 
 @Component({
   selector: 'page-home',
@@ -13,8 +15,12 @@ export class HomePage {
 
   }
 
-  logEvent(event){
-    this.navCtrl.push(ProfilePage);
+  gotoOrg(event){
+    this.navCtrl.push(OrganizationsPage);
+  }
+
+  gotoAct(event){
+    this.navCtrl.push(ActivistPage);
   }
 
 }
