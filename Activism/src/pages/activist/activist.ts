@@ -30,4 +30,5 @@ export class ActivistPage {
     return this.point;
   }
 
+
 }

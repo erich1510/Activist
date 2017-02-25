@@ -12,10 +12,33 @@
     <ion-title>Activist</ion-title>
   </ion-navbar>
 
-  <h3>Points {{getPoints()}}</h3>
 
-  <button ion-button>Get points</button>
 
+  <h3>Points: {{getPoints()}}</h3>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Issues</ion-label>
+      <ion-select>
+        <ion-option value = "mental health">Mental Health</ion-option>
+        <ion-option value = "feminism">Feminism</ion-option>
+        <ion-option value = "environmental issues">Environmental Issues</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Time available</ion-label>
+      <ion-select>
+        <ion-option value = "5mins">5 Minutes</ion-option>
+        <ion-option value = "10mins">10 Minutes</ion-option>
+        <ion-option value = "20mins">20 Minutes</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+
+
+  <button ion-button round (click)="gotoSearch()">Confirm</button>
 </ion-header>
 
 

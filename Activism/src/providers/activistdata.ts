@@ -9,7 +9,7 @@ export class activistdata {
   eventsattending: Array<Object>;
 
 
-  constructor(name){
+  constructor(){
     this.eventsattending = new Array();
     this.points = 0;
     this.name = name;
