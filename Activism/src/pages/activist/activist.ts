@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {} from '../../providers/activistdata';
 import {activistdata} from "../../providers/activistdata";
-
+import { SearchPage } from '../search/search';
 /*
   Generated class for the Activist page.
 
@@ -16,6 +15,8 @@ import {activistdata} from "../../providers/activistdata";
 export class ActivistPage {
 
   point: number;
+  issue: string;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public actdata: activistdata) {
     this.point=actdata.getPoints();
@@ -30,5 +31,10 @@ export class ActivistPage {
     return this.point;
   }
 
+
+
+  gotoSearch(){
+    this.navCtrl.push(SearchPage, {param1: ""})
+  }
 
 }

@@ -5,6 +5,7 @@ import { HomePage } from '../pages/home/home';
 import { ActivistPage } from '../pages/activist/activist';
 import { OrganizationsPage } from '../pages/organizations/organizations';
 import { activistdata} from '../providers/activistdata';
+import { SearchPage } from '../pages/search/search';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { activistdata} from '../providers/activistdata';
     HomePage,
     ActivistPage,
     OrganizationsPage,
+    SearchPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,6 +25,7 @@ import { activistdata} from '../providers/activistdata';
     HomePage,
     ActivistPage,
     OrganizationsPage,
+    SearchPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, activistdata]
 })
