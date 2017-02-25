@@ -6,13 +6,13 @@
 export class activistdata {
   points: number;
   name: string;
-  eventsattending: string;
+  eventsattending: Array<Object>;
 
 
-  constructor(){
-    this.eventsattending = "a";
+  constructor(name){
+    this.eventsattending = new Array();
     this.points = 0;
-    this.name = 'Name';
+    this.name = name;
   }
 
   getPoints(){
