@@ -3,6 +3,8 @@ export class eventdata {
   name: string;
   time: Date;
   org: Object;
+  peopleAttending: Array<Object>;
+
 
   constructor(name, location, time, org){
     this.name = name;
@@ -25,6 +27,30 @@ export class eventdata {
 
   getOrg() {
       return this.org;
+  }
+
+  getPeopleAttending() {
+      return this.peopleAttending;
+  }
+
+  setName(name) {
+      this.name = name;
+  }
+
+  setLocation(location) {
+      this.location = location;
+  }
+
+  setOrg(org) {
+      this.org = org;
+  }
+
+  setTime(time) {
+      this.time = time;
+  }
+
+  addPerson(per){
+      this.peopleAttending.push(per);
   }
 
 }

@@ -27,5 +27,11 @@ export class organizationdata {
       return this.logo;
   }
 
-  
+  addEvent(eve){
+      this.eve.push(eve);
+  }
+
+  addLinks(link){
+      this.links.push(link);
+  }
 }

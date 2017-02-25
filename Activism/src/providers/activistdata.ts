@@ -18,4 +18,20 @@ export class activistdata {
   getPoints(){
     return this.points;
   }
+
+  getName(){
+      return this.name;
+  }
+
+  getEventsAttended(){
+      return this.eventsattending;
+  }
+
+  setName(name){
+      this.name = name;
+  }
+
+  addPoints(points){
+      this.points+=points;
+  }
 }
