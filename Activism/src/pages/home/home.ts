@@ -4,10 +4,12 @@ import { NavController } from 'ionic-angular';
 import { ProfilePage} from '../profile/profile';
 import {OrganizationsPage} from "../organizations/organizations";
 import {ActivistPage} from "../activist/activist";
+import {activistdata} from '../../providers/activistdata';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  providers: [activistdata],
 })
 export class HomePage {
 

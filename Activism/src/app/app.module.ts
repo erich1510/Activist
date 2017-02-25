@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ActivistPage } from '../pages/activist/activist';
 import { OrganizationsPage } from '../pages/organizations/organizations';
+import { activistdata} from '../providers/activistdata';
 
 
 @NgModule({
@@ -11,7 +12,7 @@ import { OrganizationsPage } from '../pages/organizations/organizations';
     MyApp,
     HomePage,
     ActivistPage,
-    OrganizationsPage
+    OrganizationsPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -21,8 +22,9 @@ import { OrganizationsPage } from '../pages/organizations/organizations';
     MyApp,
     HomePage,
     ActivistPage,
-    OrganizationsPage
+    OrganizationsPage,
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, activistdata]
 })
-export class AppModule {}
+export class AppModule {
+}

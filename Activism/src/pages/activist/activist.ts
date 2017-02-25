@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {} from '../../providers/activistdata';
+import {activistdata} from "../../providers/activistdata";
 
 /*
   Generated class for the Activist page.
@@ -13,10 +15,19 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ActivistPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  point: number;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public actdata: activistdata) {
+    this.point=actdata.getPoints();
+  }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ActivistPage');
+  }
+
+  getPoints(){
+    return this.point;
   }
 
 }
